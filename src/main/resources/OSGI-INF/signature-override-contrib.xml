@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.signature.config.override">
+
+<require>org.nuxeo.signature.config.default</require>
+
+  <documentation>
+    Contribution of default values for the certificates
+    creation service. Must be overridden by a project-specific component
+    to provide custom values.
+  </documentation>
+
+  <extension target="org.nuxeo.ecm.platform.signature.api.sign.SignatureService"
+    point="signature">
+    <!-- 
+    <configuration removeExtension="true"></configuration>
+     -->
+    
+    <configuration>
+      <reason>This document signed as an example.
+      </reason>
+      <layout id="defaultConfig" lines="5" columns="3" startLine="1" startColumn="1" textSize="7"/>
+      <appearanceFactory class="org.nuxeo.ecm.platform.signature.appearance.CustomSignatureAppearanceFactory" />
+    </configuration>
+  </extension>
+
+</component>
