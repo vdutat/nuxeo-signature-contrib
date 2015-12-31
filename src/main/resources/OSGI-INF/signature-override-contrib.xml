@@ -18,7 +18,7 @@
     <configuration>
       <reason>This document signed as an example.
       </reason>
-      <layout id="defaultConfig" lines="5" columns="3" startLine="1" startColumn="1" textSize="7"/>
+      <layout id="defaultConfig" lines="3" columns="2" startLine="1" startColumn="1" textSize="7"/>
       <appearanceFactory class="org.nuxeo.ecm.platform.signature.appearance.CustomSignatureAppearanceFactory" />
     </configuration>
   </extension>
